@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container py-4" style="max-width: 900px;">
+
+    <!-- Page Header -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Projects</h2>
+        <p class="text-muted small">A few things I've built</p>
+    </div>
+
+    <!-- Simple Projects Grid -->
+    <div class="row g-3">
+
+        <!-- Project 1 -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Portfolio Website</h5>
+                    <p class="card-text small text-muted">Minimalist personal portfolio with dark/light mode</p>
+                    <div class="d-flex gap-2 small">
+                        <span class="badge bg-light text-dark border">HTML/CSS</span>
+                        <span class="badge bg-light text-dark border">Bootstrap</span>
+                        <span class="badge bg-light text-dark border">JS</span>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none small">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Task Manager App</h5>
+                    <p class="card-text small text-muted">Simple to-do app with local storage</p>
+                    <div class="d-flex gap-2 small">
+                        <span class="badge bg-light text-dark border">React</span>
+                        <span class="badge bg-light text-dark border">Tailwind</span>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none small">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Weather Dashboard</h5>
+                    <p class="card-text small text-muted">Real-time weather data using API</p>
+                    <div class="d-flex gap-2 small">
+                        <span class="badge bg-light text-dark border">JavaScript</span>
+                        <span class="badge bg-light text-dark border">API</span>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none small">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Blog Platform</h5>
+                    <p class="card-text small text-muted">Simple CMS with markdown support</p>
+                    <div class="d-flex gap-2 small">
+                        <span class="badge bg-light text-dark border">Django</span>
+                        <span class="badge bg-light text-dark border">Bootstrap</span>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none small">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Simple Footer Link -->
+    <div class="text-center mt-4">
+        <a href="#" class="text-muted small text-decoration-none">More on GitHub →</a>
+    </div>
+
+</div>
+
+{% endblock %}

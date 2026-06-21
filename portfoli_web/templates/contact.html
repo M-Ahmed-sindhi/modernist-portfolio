@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container py-4" style="max-width: 700px;">
+
+    <!-- Page Header -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Contact</h2>
+        <p class="text-muted small">Get in touch</p>
+    </div>
+
+    <!-- Simple Contact Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+
+            <!-- Contact Methods -->
+            <div class="text-center mb-4">
+                <div class="mb-3">
+                    <i class="fas fa-envelope fa-2x text-dark mb-2"></i>
+                    <p class="mb-1 fw-semibold">Email</p>
+                    <a href="mailto:hello@example.com"
+                        class="text-decoration-none text-muted small">hello@example.com</a>
+                </div>
+
+                <div class="mb-3">
+                    <i class="fab fa-github fa-2x text-dark mb-2"></i>
+                    <p class="mb-1 fw-semibold">GitHub</p>
+                    <a href="#" class="text-decoration-none text-muted small">github.com/username</a>
+                </div>
+
+                <div class="mb-3">
+                    <i class="fab fa-linkedin fa-2x text-dark mb-2"></i>
+                    <p class="mb-1 fw-semibold">LinkedIn</p>
+                    <a href="#" class="text-decoration-none text-muted small">linkedin.com/in/username</a>
+                </div>
+            </div>
+
+            <hr class="my-3">
+
+            {% endblock %}

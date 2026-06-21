@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container py-4" style="max-width: 800px;">
+    <!-- Minimalist Resume Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+
+            <!-- Header -->
+            <div class="text-center mb-3">
+                <h2 class="fw-bold mb-0">Alex Chen</h2>
+                <p class="text-muted small">Frontend Developer</p>
+            </div>
+
+            <!-- Contact (simple row) -->
+            <div class="row text-center small text-muted mb-3 g-2">
+                <div class="col">
+                    <i class="fas fa-envelope"></i> alex@email.com
+                </div>
+                <div class="col">
+                    <i class="fab fa-github"></i> github.com/alex
+                </div>
+                <div class="col">
+                    <i class="fab fa-linkedin"></i> linkedin.com/in/alex
+                </div>
+            </div>
+
+            <hr class="my-3">
+
+            <!-- Skills (simple badges) -->
+            <div class="mb-3">
+                <h6 class="fw-bold mb-2">Skills</h6>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-dark">React</span>
+                    <span class="badge bg-dark">Python</span>
+                    <span class="badge bg-dark">Django</span>
+                    <span class="badge bg-dark">Bootstrap</span>
+                    <span class="badge bg-dark">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Experience (simple) -->
+            <div class="mb-3">
+                <h6 class="fw-bold mb-2">Experience</h6>
+                <div class="mb-2">
+                    <div class="fw-semibold">Frontend Developer</div>
+                    <div class="small text-muted">TechCorp · 2022–Present</div>
+                    <div class="small">Built responsive web apps with React & Bootstrap</div>
+                </div>
+                <div>
+                    <div class="fw-semibold">Web Developer</div>
+                    <div class="small text-muted">StartupX · 2020–2022</div>
+                    <div class="small">Created modern UI components and landing pages</div>
+                </div>
+            </div>
+
+            <!-- Education (simple) -->
+            <div class="mb-3">
+                <h6 class="fw-bold mb-2">Education</h6>
+                <div class="fw-semibold">BS Computer Science</div>
+                <div class="small text-muted">University of Tech · 2020</div>
+            </div>
+
+            <hr class="my-3">
+
+            <!-- Download Button (JS fake resume) -->
+            <div class="text-center">
+                <button onclick="downloadResume()" class="btn btn-outline-dark btn-sm px-4">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function downloadResume() {
+        const content = `Alex Chen
+Frontend Developer
+Email: alex@email.com
+GitHub: github.com/alex
+LinkedIn: linkedin.com/in/alex
+
+SKILLS
+React, Python, Django, Bootstrap, JavaScript
+
+EXPERIENCE
+Frontend Developer | TechCorp (2022–Present)
+- Built responsive web apps with React & Bootstrap
+- Collaborated with design team on UI components
+
+Web Developer | StartupX (2020–2022)
+- Created modern UI components and landing pages
+- Improved site performance by 30%
+
+EDUCATION
+BS Computer Science | University of Tech (2020)`;
+
+        const blob = new Blob([content], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "alex_resume.txt";
+        link.click();
+        URL.revokeObjectURL(link.href);
+    }
+</script>
+
+{% endblock %}

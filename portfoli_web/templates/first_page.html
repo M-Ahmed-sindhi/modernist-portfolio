@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="first_part">
+    <h1 class="name">The guy</h1>
+</div>
+<div class="main_content">
+    <p>"this guy really works hard he deserves<br> better he is not doner kebab"</p>
+    <div class="image-box">
+        <img src="/media/portfolio_pic.png" alt="Portfolio Image">
+    </div>
+</div>
+<div class="options-container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Resume page</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">this is the resume of the guy</h6>
+            <p class="card-text">in his resume its about his work experience and his educationn and projects</p>
+            <a href="resume/" class="card-link">click here to see his resume</a>
+
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">projects</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">projects</h6>
+            <p class="card-text">some of the projects built by me.</p>
+            <a href="projects/" class="card-link">my projects</a>
+
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">contact me</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">contact me</h6>
+            <p class="card-text">some of the mediums through which you can contact me.</p>
+            <a href="contact/" class="card-link">contacts</a>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
